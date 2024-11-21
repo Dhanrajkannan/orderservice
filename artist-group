@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: artist-relations-team
+  description: The artist relation team
+spec:
+  type: business-unit
+  profile:
+    displayName: artist-relations-team
