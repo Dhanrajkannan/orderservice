@@ -7,3 +7,19 @@ spec:
   type: website
   lifecycle: production
   owner: user:ram
+---  
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ram
+spec:
+  memberOf: [guests]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: orderteam
+spec:
+  type: team
+  children: []
